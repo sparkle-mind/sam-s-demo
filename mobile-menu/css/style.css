@@ -1,0 +1,598 @@
+/* GRAPHIK FONT_START----------------- */
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/graphik/Graphik-Black.eot');
+    src: url('../fonts/graphik/Graphik-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/graphik/Graphik-Black.woff2') format('woff2'),
+        url('../fonts/graphik/Graphik-Black.woff') format('woff'),
+        url('../fonts/graphik/Graphik-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/graphik/Graphik-Extralight.eot');
+    src: url('../fonts/graphik/Graphik-Extralight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/graphik/Graphik-Extralight.woff2') format('woff2'),
+        url('../fonts/graphik/Graphik-Extralight.woff') format('woff'),
+        url('../fonts/graphik/Graphik-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/graphik/Graphik-Medium.eot');
+    src: url('../fonts/graphik/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/graphik/Graphik-Medium.woff2') format('woff2'),
+        url('../fonts/graphik/Graphik-Medium.woff') format('woff'),
+        url('../fonts/graphik/Graphik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/graphik/Graphik-Light.eot');
+    src: url('../fonts/graphik/Graphik-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/graphik/Graphik-Light.woff2') format('woff2'),
+        url('../fonts/graphik/Graphik-Light.woff') format('woff'),
+        url('../fonts/graphik/Graphik-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/graphik/Graphik-Regular.eot');
+    src: url('../fonts/graphik/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/graphik/Graphik-Regular.woff2') format('woff2'),
+        url('../fonts/graphik/Graphik-Regular.woff') format('woff'),
+        url('../fonts/graphik/Graphik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/graphik/Graphik-Semibold.eot');
+    src: url('../fonts/graphik/Graphik-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/graphik/Graphik-Semibold.woff2') format('woff2'),
+        url('../fonts/graphik/Graphik-Semibold.woff') format('woff'),
+        url('../fonts/graphik/Graphik-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* GRAPHIK FONT_END----------------- */
+/* DOMIAN-DISPLAY FONT_START---------------- */
+@font-face {
+    font-family: 'domain-display';
+    src: url('../fonts/Domaine-Display/DomaineDisplay-Medium.eot');
+    src: url('../fonts/Domaine-Display/DomaineDisplay-Medium.eot?#iefix')
+            format('embedded-opentype'),
+        url('../fonts/Domaine-Display/DomaineDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/Domaine-Display/DomaineDisplay-Medium.woff') format('woff'),
+        url('../fonts/Domaine-Display/DomaineDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* DOMAIN_DISPLAY FONT_END---------------- */
+
+/*==================================== VARIABLES ====================================*/
+:root {
+    --Graphik-font: 'Graphik', sans-serif;
+    --domain-display-font: 'domain-display', sans-serif;
+    --purple: #561030;
+    --light-green: #3e5349;
+    --cream-bg: #f1ebe4;
+    --cream-clr: #f7eee7;
+    --orange-clr: #ed8960;
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #1a4058;
+
+    --h2: normal 500 52px/56px var(--domain-display-font);
+    --h3: normal 500 47px/56px var(--domain-display-font);
+    --h4: normal 500 35px/42px var(--domain-display-font);
+    --h5: normal 500 30px/36px var(--domain-display-font);
+    --h6: normal 500 25px/31px var(--domain-display-font);
+    --p: normal 500 13px/17px var(--domain-display-font);
+}
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+html {
+    outline: none;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    color: var(--black-text);
+    line-height: 24px;
+    font-size: 16px;
+    font-family: var(--domain-display-font);
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+svg,
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+body.active-menu {
+    overflow: hidden;
+    touch-action: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+select,
+textarea {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    outline: none;
+    resize: none;
+    font-family: var(--first-font);
+}
+a,
+a:focus,
+button,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: inherit;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+span {
+    display: block;
+}
+::selection {
+    background: rgba(166, 175, 189, 0.3);
+}
+::-moz-selection {
+    background: rgba(166, 175, 189, 0.3);
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/* p:not(:last-of-type) {
+    margin-bottom: 20px;
+} */
+.black-bg {
+    background: var(--black);
+}
+.light-bg {
+    background: var(--light-blue);
+}
+/* ==================================== TYPOGRAPHY ==================================== */
+
+h2,
+.h2 {
+    font: var(--h2);
+}
+h3,
+.h3 {
+    font: var(--h3);
+}
+h4,
+.h4 {
+    font: var(--h4);
+}
+h5,
+.h5 {
+    font: var(--h5);
+}
+h6,
+.h6 {
+    font: var(--h6);
+}
+
+.p,
+p {
+    font: var(--p);
+}
+/*====================================  HELPING CLASSES ====================================*/
+
+.container {
+    max-width: 1490px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+.offset-left {
+    margin-left: calc((100% - 1450px) / 2);
+}
+.offset-right {
+    margin-right: calc((100% - 1450px) / 2);
+}
+
+.overflow-hidden,
+.no-scroll {
+    overflow: hidden;
+}
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.align-baseline {
+    align-items: baseline;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.direction-column {
+    flex-direction: column;
+}
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.mobile-only {
+    display: none;
+}
+.bg-pink {
+    background: var(--pink);
+}
+.bg-gold {
+    background: var(--gold);
+}
+.d-none {
+    display: none;
+}
+/************************************* COMMON BUTTON CSS **************************************/
+
+button,
+.btn {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--Graphik-font);
+    padding: 7px;
+    letter-spacing: 3px;
+    color: var(--white);
+    background-color: transparent;
+    box-shadow: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid var(--white);
+    border-radius: 3px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    /* line-height:0; */
+}
+
+button:hover,
+.btn:hover,
+.btn:focus {
+    background-color: var(--light-green);
+    color: var(--white) !important;
+}
+
+/*==================================== SLICK SLIDER START ====================================*/
+
+/*==================================== COMMON CSS ====================================*/
+/* .desk-only{
+    display: block;
+} */
+/*==================================== HEADER-START ====================================*/
+
+/* header-start */
+.pepper-header {
+    position: absolute;
+    top: auto;
+    width: 100%;
+    z-index: 9;
+    background-color: var(--white);
+}
+
+.header-logo {
+    width: 100%;
+    max-width: 180px;
+}
+.header-nav a {
+    font: normal 500 14px/1 var(--Graphik-font);
+    letter-spacing: 1.8px;
+    color: #000;
+    text-transform: uppercase;
+}
+.header-nav a:hover {
+    border-bottom: 2px solid gray;
+}
+.header-nav li {
+    padding: 13px 0;
+}
+.header-nav li:not(:last-child) {
+    padding-right: 5.5%;
+}
+.header-nav {
+    flex: 1;
+    justify-content: center;
+}
+.header-right li {
+    width: 19px;
+    height: 19px;
+}
+.header-right li:not(:last-child) {
+    margin-right: 15px;
+}
+.header-logo {
+    line-height: 0;
+}
+
+/*============ toggle menu =================*/
+.main-menu {
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px black;
+    color: var(--white);
+    position: fixed;
+    top: 40px;
+    left: -100%;
+    z-index: 5;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.main-menu.active {
+    display: block;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.overlay {
+    display: none;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+.overlay.active {
+    display: block;
+    visibility: visible;
+    opacity: 0.5;
+}
+.menu-icon a span {
+    width: 22px;
+    height: 2px;
+    border-radius: 22px;
+    background-color: #000;
+    transition: all 0.3s ease-in-out
+}
+.menu-icon a span:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.mobile-toggle.active .menu-icon span:first-child {
+    transform: rotate(50deg) translate(5px, 5px); 
+}
+.mobile-toggle.active .menu-icon span:last-child {
+   opacity: 0;
+}
+.mobile-toggle.active .menu-icon span:nth-child(2) {
+    transform: rotate(310deg);
+}
+/* ======== toggle end ===========  */
+
+
+
+
+/* ========== RESPONSIVE ============= */
+@media only screen and (max-width: 767px) {
+    
+    .desk-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+    header.pepper-header {
+        padding: 13px 0;
+    }
+
+    .header-right {
+        flex: 1;
+        justify-content: end;
+    }
+    .header-logo {
+        margin-left: 15px;
+    }
+
+/* toggle */
+ul.header-nav {
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    padding: 30px;
+}
+/* toggle */
+
+}
