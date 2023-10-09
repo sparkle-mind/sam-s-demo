@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/*  
+========== CSS INDEXING START HERE ========== 
+IMPORT FILES  
+VARIABLES
+GENERAL
+TYPOGRAPHY  
+========== CSS INDEXING End HERE ==========
+*/
+
+/* ==================================== IMPORT FILES ==================================== */
+
+/*==================================== VARIABLES ====================================*/
+:root {
+    --first-font: 'Poppins', sans-serif;
+    --body-bg: #f5f5f5;
+    --text-clr: #868585;
+    --white: #ffffff;
+    --black: #000000;
+    --pink-clr: #eb80a8;
+
+    --h1: normal 600 23px/22px var(--first-font);
+    --h3: normal 400 15px/24px var(--first-font);
+    --h4: normal 500 12px/18px var(--first-font);
+    /* --h5: normal 400 22px/29px var(--first-font);
+    --p: normal 400 20px/61px var(--first-font); */
+}
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+html {
+    outline: none;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    color: var(--text-clr);
+    line-height: 24px;
+    font-size: 20px;
+    font-family: var(--first-font);
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+svg,
+img {
+    max-width: 100%;
+    display: block;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body.active-menu {
+    overflow: hidden;
+    touch-action: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+select,
+textarea {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    outline: none;
+    resize: none;
+    font-family: var(--first-font);
+}
+a,
+a:focus,
+button,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: inherit;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+span {
+    display: block;
+}
+::selection {
+    background: rgba(166, 175, 189, 0.3);
+}
+::-moz-selection {
+    background: rgba(166, 175, 189, 0.3);
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/* p:not(:last-of-type) {
+    margin-bottom: 20px;
+} */
+.black-bg {
+    background: var(--black);
+}
+.light-bg {
+    background: var(--light-blue);
+}
+/* ==================================== TYPOGRAPHY ==================================== */
+h1,
+.h1 {
+    font: var(--h1);
+}
+h2,
+.h2 {
+    font: var(--h2);
+    font-weight: bold;
+}
+h3,
+.h3 {
+    font: var(--h3);
+}
+h4,
+.h4 {
+    font: var(--h4);
+}
+h5,
+.h5 {
+    font: var(--h5);
+}
+h6,
+.h6 {
+    font: var(--h6);
+}
+.p,
+p {
+    font: var(--p);
+}
+/*====================================  HELPING CLASSES ====================================*/
+.container {
+    max-width: 1530px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+.offset-left {
+    margin-left: calc((100% - 1530px) / 2);
+}
+
+.overflow-hidden,
+.scrollno {
+    overflow: hidden;
+}
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row > [class*='col-'] {
+    padding: 0 15px;
+}
+.no-gutters {
+    margin: 0 !important;
+}
+.no-gutters > [class*='col-'] {
+    padding: 0 !important;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.align-baseline {
+    align-items: baseline;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.direction-column {
+    flex-direction: column;
+}
+.no-wrap {
+    flex-wrap: nowrap;
+}
+.mobile-only {
+    display: none;
+}
+.bg-pink {
+    background: var(--pink);
+}
+.bg-gold {
+    background: var(--gold);
+}
+/************************************* COMMON BUTTON CSS **************************************/
+
+button,
+.btn {
+    width: 100%;
+    text-align: center;
+    font: normal 700 12px/1 var(--first-font);
+    padding: 14px;
+    letter-spacing: 0.866667px;
+    color: var(--white);
+    /* background-color: var(--pink-clr); */
+    text-transform: unset;
+    box-shadow: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    /* border-radius: 7px; */
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+button:hover,
+.btn:hover,
+.btn:focus {
+    color: #1c2d44;
+}
+/*==================================== SLICK SLIDER START ====================================*/
+
+/*==================================== COMMON CSS ====================================*/
+
+.red-text {
+    color: var(--theme-color);
+    display: inline;
+}
+.white-text {
+    color: var(--white) !important;
+}
+.dark-text {
+    color: #222222 !important;
+}
+.body-wrapper {
+    padding: 35px;
+    background-color: var(--body-bg);
+}
+/*==================================== PDP-START ====================================*/
+.pdp-section {
+    padding: 100px 0;
+    background: #ebebea;
+}
+.pdp-left {
+    max-width: 62.8%;
+    width: 100%;
+    animation: left 2s 1 alternate;
+}
+.pdp-right {
+    max-width: 37.2%;
+    width: 100%;
+    animation: right 2s 1 alternate;
+}
+.pdp-thumbnail-wrp {
+    width: 16.9%;
+}
+.pdp-slider-wrp {
+    width: 73.8%;
+    padding-left: 3%;
+}
+.pdp-slider-item {
+    width: 100%;
+    position: relative;
+    padding-top: 38%;
+}
+.pdp-slider-item img,
+.pdp-thumbnail-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.pdp-thumbnail-wrp .slick-list {
+    display: inline !important;
+}
+.pdp-thumbnail-item {
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.pdp-row {
+    overflow: hidden;
+}
+.pdp-wishlist {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    height: 100%;
+    animation: bounce 1s infinite alternate;
+}
+.pdp-wishlist:hover svg {
+    fill: #c3949f;
+}
+.pdp-color {
+    padding: 15px 0;
+}
+.pdp-color h3 {
+    margin: 5px 0;
+    line-height: 1;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.pdp-color input {
+    display: none;
+}
+.pdp-color form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.pdp-color label {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.pdp-color input:checked + label {
+    outline: 2px solid #838282;
+    outline-offset: 2px;
+}
+.pdp-acc-cont {
+    display: none;
+}
+.pdp-accordion {
+    border-top: 1px solid;
+    position: relative;
+    padding: 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+.pdp-acr-item {
+    border-bottom: 1px solid;
+}
+.pdp-acc-cont p {
+    font-size: 15px;
+    line-height: 1.3;
+    margin: 5px 0 10px;
+}
+
+.pdp-accordion.active a {
+    transform: rotate(180deg);
+}
+
+.pdp-btn {
+    width: 100%;
+    max-width: 20%;
+    color: #fff;
+    border: 2px solid #000;
+    background-image: linear-gradient(30deg, #000 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: 300ms ease-in-out;
+  
+}
+.pdp-btn:hover{
+    background-position: 100%;
+    color: #c266d3;
+    background-color: #fff;
+}
+.pdp-btn-wrp {
+    margin: 15px 0px;
+}
+
+/* ---- ANIMATION_ON_BTN ----- */
+.pdp-sec-btn-wrp{
+    max-width: 300px;
+    width: 100%;
+    font-size:15px;
+    line-height: 1;
+}
+.pdp-sec-btn-wrp .btn:hover{
+    color:#fff;
+}
+.pdp-sec-btn-wrp .btn{
+    background: #000;
+    position:relative;
+    overflow:hidden;
+}
+.pdp-sec-btn-wrp .btn span:nth-child(1){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #171618, #bd6ca8);
+    animation: animate1 2s linear infinite;
+}
+.pdp-sec-btn-wrp .btn span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to bottom, #171618, #bd6ca8);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+.pdp-sec-btn-wrp .btn span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, #171618, #bd6ca8);
+     animation: animate3 2s linear infinite;
+}
+.pdp-sec-btn-wrp .btn span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to top, #171618, #bd6ca8);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+/* ---- ANIMATION_ON_BTN ----- */
+.underline{
+    position: relative;
+    max-width: 73px;
+    margin: 20px auto;
+    padding: 0;
+    color: rgb(196, 85, 122);
+}
+.underline::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #000;
+    bottom: -8px;
+    right: 0;
+    transition: all 0.2s;
+
+}
+.underline:hover::after{
+    width:100%;
+}
+
+/* **********  ANIMATION-START ********* */
+
+@keyframes  animate1 {
+    0%{
+        transform: translateX(-100%)
+    }
+   100%{
+        transform: translateX(100%)
+    }
+}
+@keyframes animate2 {
+    0%{
+        transform: translateY(-100%)
+    }
+   100%{
+        transform: translateY(100%)
+    }
+}
+@keyframes  animate3 {
+    0%{
+        transform: translateX(100%)
+    }
+   100%{
+        transform: translateX(-100%)
+    }
+}
+@keyframes animate4 {
+    0%{
+        transform: translateY(100%)
+    }
+   100%{
+        transform: translateY(-100%)
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+@keyframes left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* **********  ANIMATION-END ********* */
+
+
+/*==================================== PDP_END ====================================*/

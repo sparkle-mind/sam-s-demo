@@ -1,0 +1,512 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+:focus,
+:active {
+    outline: none !important;
+}
+
+/* ======================== VARIABLES======================== */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: var(--p);
+    line-height: 20px;
+    color: var(--black);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--black);
+}
+
+::selection {
+    background: rgba(127, 131, 51, 0.2);
+}
+
+::-moz-selection {
+    background: rgba(127, 131, 51, 0.2);
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*====================================  HELPING CLASSES ====================================*/
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.no-wrap {
+    flex-wrap: nowrap;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.direction-column {
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.container {
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ========================= TYPOGRAPHY ======================== */
+.h1,
+h1 {
+    font: var(--h1);
+}
+.h2,
+h2 {
+    font: var(--h2);
+}
+.h3,
+h3 {
+    font: var(--h3);
+}
+.h4,
+h4 {
+    font: var(--h4);
+}
+.h5,
+h5 {
+    font: var(--h5);
+}
+.p,
+p {
+    font: var(--p);
+}
+
+/******************** COMMON BUTTON CSS ********************/
+/* .btn,
+button {
+    background: var(--white);
+    color: var(--black);
+    font-size: 15.5px;
+    padding: 11.5px 14px;
+    line-height: 1.1;
+    box-shadow: none;
+    display: inline-block;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.btn:hover,
+button:hover {
+    background-color: #5064b3 !important;
+} */
+.mobile-only {
+    display: none;
+}
+
+/******************** DELIVERY SLIDER  SECTION START ********************/
+
+.del-slider-section {
+    padding: 54px 0 52px;
+}
+.del-slider-wrp {
+    margin: 0 -12px;
+}
+.del-slider-col {
+    padding: 0 8px;
+    text-align: center;
+    color: #fff;
+}
+.del-slider-cont h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.del-slider-cont h2 {
+    font-size: 55px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.del-slider-cont h4 {
+    font-size: 26px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.del-slider-img,
+.spe-contractor-img {
+    position: relative;
+    padding-top: 375px;
+}
+.del-slider-img > img,
+.spe-contractor-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.del-slider-cont {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    max-width: 245px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.del-slider-col.diff .del-slider-cont {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+    top: 40%;
+}
+
+.del-slider-col.diff .del-slider-cont a {
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.del-slider-btn {
+    margin-top: 48%;
+}
+.del-slider-col.diff .del-slider-cont svg {
+    width: 14px;
+    height: 100%;
+    margin-left: 5px;
+}
+.del-slider-cont a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.del-slider-cont h5 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 31px;
+    text-transform: capitalize;
+}
+.del-slider-btn a img {
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+}
+
+/********************  DELIVERY SLIDER  SECTION END ********************/
+/********************  HOME-BRAND  SECTION START ********************/
+
+.home-banner-title h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: #18202e;
+}
+
+.home-banner-title a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration: underline;
+}
+.home-brand-logo-row {
+    margin: 0 -2.2%;
+}
+.home-brand-logo {
+    padding: 0 2.2%;
+}
+.home-brand-logo a img {
+    object-fit: scale-down;
+    height: 175px;
+}
+
+
+/********************  HOME-BRAND  SECTION END ********************/
+
+/******************** RESPONSIVE ********************/
+
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 1240px) {
+}
+@media only screen and (max-width: 1024px) {
+    /*  ****** del-slider start ****** */
+    .del-slider-wrp {
+        margin: 0 -5px;
+    }
+    .del-slider-col {
+        padding: 0 5px;
+    }
+    .del-slider-cont h3 {
+        font-size: 21px;
+    }
+    .del-slider-cont h2 {
+        font-size: 37px;
+    }
+
+    .del-slider-cont h4 {
+        font-size: 18px;
+    }
+    .del-slider-cont h5 {
+        font-size: 25px;
+    }
+    .del-slider-btn {
+        margin-top: 35%;
+    }
+    /*  ****** del-slider end ****** */
+}
+
+
+@media only screen and (min-width: 991px) {
+.home-brand-logo-row {
+    margin: 0 -2.2%;
+    justify-content: space-between;
+    width: auto;
+}
+.del-slider-wrp{
+    margin: 0 -8px;
+    justify-content: space-between;
+    width: auto;
+}
+
+}
+@media only screen and (max-width: 991px) {
+
+    .del-slider-section .container{
+        padding-right:0;
+    }
+    .del-slider-col {
+        padding: 0 10px;
+    }
+    .del-slider-col.diff .del-slider-cont a {
+        margin-top: 10px;
+    }
+    .del-slider-img{
+        padding-top: 322px;
+    }
+    .home-brand-section .container.sec {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .desk-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+   
+    .home-banner-title h2 {
+        font-size: 20px;
+    }
+    .del-slider-img > img, .spe-contractor-img img{
+        border-radius: 3px;
+    }
+    .del-slider-section {
+        padding: 42px 0 50px;
+    }
+    .spe-contractor-para p {
+        margin-bottom: 18px;
+    }
+    .del-slider-col.diff .del-slider-cont svg {
+        width: 10px;
+    }
+ 
+     
+}
+@media only screen and (max-width: 640px) {
+    
+}
+@media only screen and (max-width: 540px) {
+}
+@media only screen and (max-width: 475px) {
+}
