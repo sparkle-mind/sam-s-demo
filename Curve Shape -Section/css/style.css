@@ -1,0 +1,579 @@
+/*  
+========== CSS INDEXING START HERE ========== 
+IMPORT FILES  
+VARIABLES
+GENERAL
+TYPOGRAPHY  
+========== CSS INDEXING End HERE ==========
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+:focus,
+:active {
+    outline: none !important;
+}
+
+/* ==================================== IMPORT FILES ==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ==================================== VARIABLES ==================================== */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --darkgray: #092540;
+    --blue: #485df0;
+    --primary-font: 'Inter', sans-serif;
+    --h1: normal normal 700 81px/97px var(--primary-font);
+    --h2: normal normal 700 38px/46px var(--primary-font);
+    --h3: normal normal 700 24px/20px var(--primary-font);
+    --h4: normal normal 400 16px/22px var(--primary-font);
+    --p: normal normal 400 14px/20px var(--primary-font);
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    color: var(--black);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--black);
+}
+
+::selection {
+    background: rgba(127, 131, 51, 0.2);
+}
+
+::-moz-selection {
+    background: rgba(127, 131, 51, 0.2);
+}
+
+/*====================================  HELPING CLASSES ====================================*/
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.no-wrap {
+    flex-wrap: nowrap;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.direction-column {
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1306px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* ==================================== TYPOGRAPHY ==================================== */
+.h1,
+h1 {
+    font: var(--h1);
+}
+.h2,
+h2 {
+    font: var(--h2);
+}
+.h3,
+h3 {
+    font: var(--h3);
+}
+.h4,
+h4 {
+    font: var(--h4);
+}
+.p,
+p {
+    font: var(--p);
+}
+
+/******************** COMMON BUTTON CSS ********************/
+
+/* ---------- ingredients Section Start -------- */
+
+.ingredients-section {
+    padding: 50px 0 0;
+}
+.ingredients-row {
+    padding: 0 20px 100px 20px;
+}
+
+.ingredients-left {
+    width: 40%;
+}
+.ingredients-right {
+    width: 60%;
+    padding-left: 5%;
+}
+.ingredients-img {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100%;
+}
+.ingredients-img::before,
+.action-img::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -17px;
+    width: 100%;
+    height: 100%;
+    background-color: #c9008f;
+    transform: rotate(-3deg);
+    border-radius: 38px;
+}
+.ingredients-img img,
+.action-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+.section-title h2 {
+    font-size: 49px;
+    font-weight: 800;
+    color: #c9008f;
+}
+.ingredients-para {
+    margin: 25px 0 40px;
+}
+
+.ingredients-para p {
+    font-size: 21px;
+    line-height: 1.2;
+}
+.ingredients-section .ingredients-btn {
+    max-width: 350px;
+    width: 100%;
+}
+.ingredients-section .ingredients-btn .btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 18px;
+    border-radius: 25px;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+}
+.ingredients-row.oposite-before .ingredients-img::before {
+    left: unset;
+    right: -20px;
+    transform: rotate(2deg);
+}
+/* ---------- ingredients Section End --------*/
+/* ---------- Action Section Start --------*/
+.action-section {
+    background-color: #f4e5ff;
+    position: relative;
+    padding: 125px 0;
+}
+.top-shape {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.top-shape img,
+.bottom-shape img {
+    width: 100%;
+}
+.action-row {
+    padding: 50px 15px 0 15px;
+}
+.action-left {
+    width: 55%;
+}
+.action-right {
+    width: 45%;
+    padding-left: 30px;
+}
+.action-img {
+    position: relative;
+    padding-top: 53%;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.action-img::before {
+    transform: rotate(-2deg);
+    top: 15px;
+}
+
+.section-title span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f2c47;
+    margin: 15px 0;
+    display: block;
+}
+
+.action-itm-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.action-itm-img {
+    width: 85px;
+    height: 125px;
+}
+.action-itm-desc {
+    flex: 1;
+    width: 100%;
+    margin-left: 30px;
+}
+.action-itm-desc h3 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #4e2881;
+}
+.action-itm-desc p {
+    font-size: 18px;
+    margin: 10px 0 0;
+    line-height: 1.2;
+}
+.action-item-row:not(:last-child) {
+    margin-bottom: 15px;
+}
+.bottom-shape {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+/* ---------- Action Section End --------*/
+/* =========== RESPONSIVE ========== */
+
+@media only screen and (max-width: 1170px) {
+    .ingredients-section,
+    .action-section {
+        padding: 50px 0;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .section-title h2 {
+        font-size: 35px;
+    }
+    .ingredients-para {
+        margin: 20px 0;
+    }
+    .ingredients-para p {
+        font-size: 18px;
+    }
+    .ingredients-row {
+            padding: 0 20px 60px 20px;
+        }
+    
+    .action-itm-img {
+        width: 80px;
+        height: 80px;
+    }
+    .action-itm-desc {
+        margin-left: 5px;
+    }
+    .action-itm-desc h3 {
+        font-size: 21px;
+    }
+    .action-itm-desc p {
+        font-size: 16px;
+    }
+    .action-left {
+        width: 50%;
+    }
+    .action-right {
+        width: 50%;
+        padding-left: 15px;
+    }
+    .section-title span {
+        margin: 5px 0;
+    }
+    .action-row {
+       
+        padding:30px 15px 0 15px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .ingredients-right {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .ingredients-img {
+        padding-top: 60%;
+    }
+    .section-title h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .ingredients-para {
+        margin: 15px 0;
+    }
+    .ingredients-left {
+        width: 100%;
+    }
+    .ingredients-section .ingredients-btn {
+        margin: 0 auto;
+    }
+    .ingredients-section .ingredients-btn .btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .action-left {
+        width: 100%;
+    }
+    .action-right {
+        width: 100%;
+        padding: 50px 0 0 0;
+    }
+    .section-title span {
+        font-size: 14px;
+    }
+    .action-itm-desc h3 {
+        font-size: 18px;
+    }
+    .action-itm-desc p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .ingredients-row {
+            padding: 0 20px 40px 20px;
+        }
+    
+    .ingredients-section {
+        padding: 30px 0;
+    }
+    .action-itm-img {
+        width: 65px;
+        height: 65px;
+    }
+    .ingredients-row.oposite-before .ingredients-img::before {
+        right: -13px;
+    }
+    .action-img::before {
+        top: 10px;
+    }
+
+    .ingredients-img::before,
+    .action-img::before {
+        left: -11px;
+    }
+    .ingredients-img {
+        padding-top: 100%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .action-section .container,
+    .ingredients-section .container {
+        max-width: 1306px;
+        margin: 0 auto;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+        line-height: 1;
+    }
+    .ingredients-para p {
+        font-size: 14px;
+    }
+    .action-row {
+        padding:20px 15px 0 15px;
+    }
+}
