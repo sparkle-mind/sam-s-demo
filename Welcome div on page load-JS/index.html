@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Div </title>
+
+
+    <style>
+        *,
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .welcome-main {
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .welcome-left,
+        .welcome-right {
+            width: 50%; 
+            transition: all 0.6s ease-in-out;
+        }
+
+        .welcome-left img,
+        .welcome-right img {
+            width: 100%;
+            display: block;
+            height: 100%;
+        }
+
+        .welcome-left {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .welcome-right {
+            transform: scaleX(1);
+            transform-origin: right;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="welcome-main">
+        <div class="welcome-left"><img src="left-wel.png" alt=""></div>
+        <div class="welcome-right"><img src="right-wel.png" alt=""></div>
+    </div>
+
+    <script>
+
+        function one() {
+            let wel = document.querySelector(".welcome-left");
+            let wel2 = document.querySelector(".welcome-right");
+            wel.style.transform = "scaleX(0)";
+            wel2.style.transform = "scaleX(0)";
+        }
+
+        setTimeout(function () {
+            one();
+        }, 1500);
+
+
+
+
+    // GET_HEIGHT HEADER_START>>>>>>>>>>>>>>>>>
+
+
+    
+
+
+    function headerTop(){
+        var top = $('.hirefly-header').outerHeight();
+        $('.header-right').css('top', top + 'px');
+    }
+    headerTop();
+
+
+    $(window).on('resize orientationchange', function () {
+        headerTop();
+    });
+
+
+    //GET_HEIGHT  HEADER_END >>>>>>>>>>>>>>>>>
+
+
+
+
+    </script>
+</body>
+
+</html>

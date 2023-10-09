@@ -1,0 +1,459 @@
+/*  
+========== CSS INDEXING START HERE ========== 
+IMPORT FILES  
+VARIABLES
+GENERAL
+TYPOGRAPHY  
+========== CSS INDEXING End HERE ==========
+*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+:focus,
+:activse {
+    outline: none !important;
+}
+
+/* ==================================== IMPORT FILES ==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* ==================================== VARIABLES ==================================== */
+:root {    
+    --white: #ffffff;
+    --black: #000000;
+    --darkgray: #092540;
+    --blue: #485DF0;
+    --primary-font: 'Inter', sans-serif;
+    --h1: normal normal 700 81px/97px var(--primary-font);
+    --h2: normal normal 700 38px/46px var(--primary-font);
+    --h3: normal normal 700 24px/20px var(--primary-font);    
+    --h4: normal normal 400 16px/22px var(--primary-font);    
+    --p: normal normal 400 14px/20px var(--primary-font);  
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {    
+    font-family: var(--primary-font);
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;  
+    color: var(--darkgray);  
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--black);
+}
+
+::selection {
+    background: rgba(127, 131, 51, 0.2);
+}
+
+::-moz-selection {
+    background: rgba(127, 131, 51, 0.2);
+}
+
+/*====================================  HELPING CLASSES ====================================*/
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.no-wrap {
+    flex-wrap: nowrap;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.direction-column {
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1452px;
+    margin: 0 auto;
+}
+.section-title h2 {
+    margin-bottom: 20px;
+}
+.bg-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* ==================================== TYPOGRAPHY ==================================== */
+.h1,
+h1 {
+    font: var(--h1);
+}
+.h2,
+h2 {
+    font: var(--h2);
+}
+.h3,
+h3 {
+    font: var(--h3);
+}
+.h4,
+h4 {
+    font: var(--h4);
+}
+.p,
+p {
+    font: var(--p);
+}
+
+/******************** COMMON BUTTON CSS ********************/
+.btn,button {
+    background: var(--blue);
+    display: inline-flex;
+    align-items: center;
+    color: var(--white);
+    font: var(--p);
+    padding: 8px 25px;
+    line-height: 17px;
+    margin: 10px 0 0;
+    box-shadow: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 16.5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.btn svg {
+    height: 14px;    
+    margin-left: 8px;
+    width: auto;
+}
+.btn-white {
+    color: var(--blue);
+    background: var(--white);
+}
+.btn:hover,button:hover {
+    opacity: 0.9;
+}
+
+
+
+
+/******************** Testimonial  sections HOME PAGE-Css-Start ********************/
+
+.testimonial-hadding {
+    text-align: center;
+    margin-bottom:29px;
+}
+
+.testimonial-slider {
+    padding-right: 30px;
+}
+.testimonial-cols-inner {
+    max-width:570px;
+    width:100%;
+    background-color:#F7F9FC;
+    padding: 56px 56px 57px 53px;
+}
+.profile-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+}
+.profile-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.name-profile {
+    margin-left: 13px;
+}
+.testimonial-details {
+    margin-top:16px;
+}
+.testimonial-details p {
+    font-style: italic;
+}
+.testimonial-button {
+    margin:0 auto;
+}
+
+.testimonial-section {
+    padding: 50px 0;
+    position: relative;
+}
+.testimonial-slider .custum_arrow_next,
+.testimonial-slider .custum_arrow_prev {
+    width: 33px;
+    height: 33px;
+    top: unset;
+    bottom:0;
+    background-color: #FFF;
+    border-radius: 100%;
+    display: flex;
+    box-shadow: 0 4px 10px 0 rgb(72 93 240 / 12%);
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-slider .custum_arrow_prev svg,
+.testimonial-slider .custum_arrow_next svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+} 
+.testimonial-slider .custum_arrow_prev svg {
+    transform: scale(-1);
+}
+.testimonial-slider .custum-pagination {
+    width: 65px;
+    margin: 0 10px;
+}
+.testimonial-slider .custum_arrow {
+    margin-top: 25px;
+}
+.custum-arrow-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-slider.swiper-autoheight .swiper-wrapper {
+    padding: 0 250px;
+}
+
+.testimonial-button{
+    max-width: fit-content;
+    margin-top: 30px;
+}
+
+
+/******************** Testimonial  sections HOME PAGE-Css-End ********************/
+
+@media only screen and (max-width: 1024px)  {
+   
+    /* testimonial start */
+    .testimonial-details {
+        margin-top: 10px;
+    }
+    .testimonial-slider.swiper-autoheight .swiper-wrapper {
+        padding: 0;
+    }
+    /* testimonial end */
+}
+@media only screen and (max-width: 991px) {
+
+/* testimonial start */
+.testimonial-cols-inner {
+    max-width: 100%;
+}
+.testimonial-slider .swiper-pagination {
+    left: unset;
+    right: 0;
+    width: 40%;
+}
+
+.testimonial-button {
+    max-width: fit-content;
+    margin-top: 30px;
+}
+.testimonial-slider .custum_arrow {
+    margin-top:30px;
+    flex: 1;
+}
+.custum-arrow-wrp {
+    flex-direction: row-reverse;
+}
+.container.testi-btn-cont {
+    max-width: max-content;
+    width: 100%;
+    margin-right: auto;
+}
+
+/* testimonial start */
+}
+@media only screen and (max-width: 475px)  {
+    .testimonial-slider .custum_arrow_next, .testimonial-slider .custum_arrow_prev {
+        width: 28px;
+        height: 28px;
+    } 
+}

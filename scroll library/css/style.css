@@ -1,0 +1,17 @@
+
+
+*,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  .scroll-text-wrp{
+    margin-top: 20vh;
+    text-align: center;
+}
+
+p {
+    font-size: 5vw;
+}

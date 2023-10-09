@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-animation-5-1-23</title>
+    <!-- ******************* CSS START *******************-->
+    <style>
+        .animated-text-wrp {
+            margin: 50px;
+        }
+
+        .animated-text-wrp span {
+            font-size: 50px;
+            font-weight: 700;
+            font-family: cursive;
+        }
+
+        .animated-text-wrp .ani-text-three,
+        .animated-text-wrp .ani-text-two,
+        .animated-text-wrp .ani-text-one {
+            margin: 50px;
+            text-align: center;
+        }
+
+        /* ANIMATION-ONE START================== */
+        .animated-text-wrp .ani-text-one span {
+            animation: ani-one 2s infinite;
+        }
+
+        .animated-text-wrp .ani-text-one span:nth-of-type(1) {
+            animation-delay: 1s;
+            color: #095071;
+        }
+
+        .animated-text-wrp .ani-text-one span:nth-of-type(2) {
+            animation-delay: 1.2s;
+        }
+
+        .animated-text-wrp .ani-text-one span:nth-of-type(3) {
+            animation-delay: 1.4s;
+        }
+
+        .animated-text-wrp .ani-text-one span:nth-of-type(4) {
+            animation-delay: 1.6s;
+        }
+
+        .animated-text-wrp .ani-text-one span:nth-of-type(5) {
+            animation-delay: 1.8s;
+        }
+
+        @keyframes ani-one {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-15px);
+                opacity: 1;
+
+            }
+        }
+
+        /* ANIMATION-ONE END================== */
+        /* ANIMATION-TWO START================== */
+        .ani-text-two {
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .ani-text-two h2 {
+            font-size: 50px;
+            font-weight: 700px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #095071;
+            animation: ani-two 2s infinite linear alternate;
+        }
+
+        @keyframes ani-two {
+            0% {
+                transform: rotate(-5deg);
+
+            }
+
+            100% {
+                transform: rotate(10deg);
+                opacity: 1;
+
+            }
+        }
+
+        /* ANIMATION-TWO END================== */
+        /* ANIMATION-THREE START================== */
+
+        .animated-text-wrp .ani-text-three span {
+            animation: ani-three 1s infinite alternate;
+            display: inline-block;
+        }
+
+        .animated-text-wrp .ani-text-three span:nth-of-type(1) {
+            animation-delay: 1s;
+            color: #095071;
+        }
+
+        .animated-text-wrp .ani-text-three span:nth-of-type(2) {
+            animation-delay: 1.2s;
+        }
+
+        .animated-text-wrp .ani-text-three span:nth-of-type(3) {
+            animation-delay: 1.4s;
+        }
+
+        .animated-text-wrp .ani-text-three span:nth-of-type(4) {
+            animation-delay: 1.6s;
+        }
+
+        .animated-text-wrp .ani-text-three span:nth-of-type(5) {
+            animation-delay: 1.8s;
+        }
+
+        @keyframes ani-three {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-20px);
+                opacity: 1;
+            }
+        }
+
+        /* ANIMATION-THREE END================== */
+
+        /* ANIMATION-FOUR START================== */
+        .ani-four {
+            color: #999;
+            text-transform: uppercase;
+            font-size: 36px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+            height: 80px;
+            overflow: hidden;
+        }
+
+        .ani-four h2 {
+            color: #fff;
+            padding: 5px 12px;
+            margin-bottom: 45px;
+            font-size: 36px;
+            padding: 5px;
+        }
+
+        .ani-four h2:nth-of-type(1) {
+            background: #4ec7f3;
+            animation: ani-four 7s linear infinite;
+        }
+
+        .ani-four h2:nth-of-type(2) {
+            background: #DC143C;
+        }
+
+        .ani-four h2:nth-of-type(3) {
+            background: #42c58a;
+        }
+
+        @keyframes ani-four {
+            0% {
+                margin-top: -270px;
+            }
+
+            5% {
+                margin-top: -180px;
+            }
+
+            33% {
+                margin-top: -180px;
+            }
+
+            38% {
+                margin-top: -90px;
+            }
+
+            66% {
+                margin-top: -90px;
+            }
+
+            71% {
+                margin-top: 0px;
+            }
+
+            99.99% {
+                margin-top: 0px;
+            }
+
+            100% {
+                margin-top: -270px;
+            }
+        }
+        /* ANIMATION-FOUR END================== */
+        /* ANIMATION-FIVE START================== */
+        .ani-five h2 {
+            position: relative;
+            font-size: 50px;
+            color: #252839;
+            -webkit-text-stroke: 0.3vw #383d52;
+            text-transform: uppercase;
+            display: inline;
+        }
+
+        .ani-five h2::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #db464d;
+            -webkit-text-stroke: #db464d;
+            border-right: 2px solid #01fe87;
+            overflow: hidden;
+            animation: ani-five 6s linear infinite;
+
+        }
+
+        @keyframes ani-five {
+            0%,
+            10%,
+            100% {
+                width: 0;
+            }
+
+            70%,
+            90% {
+                width: 100%;
+            }
+        }
+
+        /* ANIMATION-FIVE END================== */
+    </style>
+    <!-- ******************* CSS END *******************-->
+</head>
+
+<body>
+
+
+    <!-- =========== TEXT_ANIMATION_ONE START ============ -->
+
+
+    <div class="animated-text-wrp">
+        <div class="ani-text-one">
+            <span>H</span>
+            <span>e</span>
+            <span>l</span>
+            <span>l</span>
+            <span>o</span>
+        </div>
+        <div class="ani-text-two">
+            <h2>Hello Lorem?</h2>
+            <h2>World</h2>
+
+        </div>
+        <div class="ani-text-three">
+            <span>W</span>
+            <span>o</span>
+            <span>r</span>
+            <span>l</span>
+            <span>d</span>
+        </div>
+
+        <div class="ani-four">
+            <h2>wOrK</h2>
+            <h2>lifeStyle</h2>
+            <h2>Everything</h2>
+        </div>
+
+        <div class="ani-five">
+            <h2 data-text="Creative.......">Creative.......</h2>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- =========== TEXT_ANIMATION_ONE END ============ -->
+
+</body>
+
+</html>
